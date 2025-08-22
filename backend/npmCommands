@@ -1,0 +1,20 @@
+1) npm init
+2) npm init -y (I will not ask about configuration and create package.json with default values )
+3) npm install express -save
+4) npm install express -save-dev
+5) npm uninstall express
+
+--------------------------------------------------------
+How to use ejs(Embeded Javascript)
+a) npm install ejs -save
+b) app.set('view engine','ejs'), add inside index.js file
+c) create folder named as 'views'
+d) save design files using '.ejs' extension
+e) insted of res.send() inside contoller, use res.render('filename')
+
+-----------------------------------------------
+to print the value of a variable
+      <%= variableName %>
+      
+
+

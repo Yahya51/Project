@@ -1,0 +1,92 @@
+<%- include('../partials/header.ejs') %>
+  <%- include('./myNav') %>
+
+    <section>
+      <h1 align="center">Admin Home Page</h1>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th> User ID </th>
+            <th> User Name </th>
+            <th> User Gender </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% userData.forEach((user)=>{ %>
+            <tr>
+              <td>
+                <%= user.uid %>
+              </td>
+              <td>
+                <%= user.unm %>
+              </td>
+              <td>
+                <%= user.gender %>
+              </td>
+            </tr>
+
+            <% }) %>
+
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <%= fruits %>
+
+        <ul>
+          <% for(let i=0; i<4; i++) { %>
+            <li>
+              <%= fruits[i] %>
+            </li>
+            <% } %>
+        </ul>
+
+        <ul>
+          <% for(let ele of fruits) { %>
+            <li>
+              <%= ele %>
+            </li>
+            <% } %>
+
+        </ul>
+
+
+
+
+
+        <% if(isValid) { %>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat ullam ea optio voluptatibus
+            autem
+            quidem aperiam architecto voluptates, vero praesentium modi aut sapiente itaque dolores quod magni expedita
+            harum?
+          </p>
+          <h3> User ID and Pasword is Valid </h3>
+
+          <% } else { %>
+            <h3> Invalid User ID and Pasword </h3>
+
+            <% } %>
+
+
+    </section>
+
+    <%- include('../partials/footer.ejs') %>
